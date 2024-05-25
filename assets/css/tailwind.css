@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    #__nuxt {
+        @apply flex flex-col min-h-screen bg-[#F3F3F7] text-[#161617] font-PT-Sans font-semibold
+    }
+
+    :root{
+        /* макимальная ширина контента */
+        --widthContent:1280px;
+        /* Растояние от границы брузера по бокам */
+        --widthContentMargin:16px;
+    }
+
+    /* Настройка кастомных контейнеров */
+    /* Применение системы гридов для расположения контента в ячейку main или full или в любую другую ячейку между именованными линиями grid*/
+
+    .grid-container{        
+        grid-template-columns: [full-start] minmax(var(--widthContentMargin), 1fr) [main-start] minmax(0, var(--widthContent)) [main-end] minmax(var(--widthContentMargin), 1fr) [full-end];
+        @apply grid
+    }
+
+    .grid-container>*{        
+        @apply col-[main]
+    }    
+
+    .wrapper{ 
+        @apply mx-auto w-[calc(100%-var(--widthContentMargin)*2)] max-w-[var(--widthContent)]
+    }
+
+    .container{        
+        @apply max-w-[var(--widthContent)]
+    }    
+}
+    .swiper-pagination-bullet{
+        background-color: #2491AF !important;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        color: #2491AF !important;
+    }
