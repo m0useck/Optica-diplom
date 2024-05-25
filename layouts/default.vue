@@ -5,3 +5,9 @@
     </main>
     <Footer/>
 </template>
+<script setup>
+    useServerSeoMeta({
+        lang: 'ru',
+        'yandex-verification': "07e6e2dae7743368"
+    })
+</script>
