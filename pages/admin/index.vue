@@ -93,7 +93,8 @@
     /* название страницы */
     useServerSeoMeta({
         title: 'Админ-панель',
-        lang: 'ru'
+        lang: 'ru',
+        'yandex-verification': "07e6e2dae7743368"
     })
 
 

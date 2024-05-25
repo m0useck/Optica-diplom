@@ -5,12 +5,3 @@
     </main>
     <Footer/>
 </template>
-
-<script setup>
-onMounted(() => {
-  const meta = document.createElement('meta')
-  meta.name = 'yandex-verification'
-  meta.content = '07e6e2dae7743368'
-  document.head.appendChild(meta)
-})
-</script>
