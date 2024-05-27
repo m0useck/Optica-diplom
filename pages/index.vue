@@ -25,7 +25,7 @@
             <Icon class="text-5xl text-[#218CAD]" name="material-symbols:chevron-right"/>
         </button>
     </div>
-    <div class="font-semibold flex items-center justify-center py-4 px-10 w-full rounded-md gap-16 max-lg:flex-col max-lg:gap-8 bg-gradient-to-r from-[#0C669C] to-[#3BBAC2] text-white -mt-6">
+    <!-- <div class="font-semibold flex items-center justify-center py-4 px-10 w-full rounded-md gap-16 max-lg:flex-col max-lg:gap-8 bg-gradient-to-r from-[#0C669C] to-[#3BBAC2] text-white -mt-6">
         <NuxtLink>
             Оправы
         </NuxtLink>
@@ -41,7 +41,7 @@
         <NuxtLink>
             Солнцезащитные очки
         </NuxtLink>
-    </div>
+    </div> -->
     
     <div class="flex flex-col gap-6">
         <div class="flex items-center gap-2 text-xl md:text-2xl xl:text-3xl font-Comfortaa font-normal">
