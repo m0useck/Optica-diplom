@@ -25,14 +25,14 @@
                         <div class="flex items-center justify-between xl:w-3/4 mx-auto gap-4 max-md:flex-col">
                             <NuxtLink to="tel:8-926-471-57-29" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300">8-926-471-57-29</NuxtLink>
                             <span class="bg-white rounded-full w-1 h-1"></span>
-                            <NuxtLink to="mailto:123123123123@mail.ru" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300">example@mail.ru</NuxtLink>
+                            <NuxtLink to="mailto:123123123123@mail.ru" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300">optica.samareva@mail.ru</NuxtLink>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="grid-container w-full bg-black/25 py-2">
-            <p class="text-center mx-auto">© 2024 <span class="font-Comfortaa font-normal">Samareva</span>™. All Rights Reserved.</p>
+            <p class="text-center mx-auto">© 2024 <span class="font-Comfortaa font-normal">Samareva</span>™</p>
         </div>
     </footer>
 </template>
