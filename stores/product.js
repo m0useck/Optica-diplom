@@ -2,7 +2,7 @@ export const useProductStore = defineStore('product', () => {
     const allProducts = ref([])  // Все товары
     const searchTerm = ref('')   // Поисковый запрос
   
-    // Getter для фильтрованных товаров
+    // Получение фильтрованных данных
     const filteredProducts = computed(() => {
       if (!searchTerm.value) return allProducts.value
       return allProducts.value.filter(product =>
@@ -10,7 +10,7 @@ export const useProductStore = defineStore('product', () => {
       )
     })
   
-    // Actions для установки товаров и поискового запроса
+    // Методы для установки товаров и поискового запроса
     const setProducts = (products) => {
       allProducts.value = products
     }
