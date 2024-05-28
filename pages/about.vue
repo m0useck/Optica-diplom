@@ -33,7 +33,7 @@
             </NuxtLink>
             <NuxtLink to="mailto:123123123123@mail.ru" class="flex items-center gap-2">
                 <Icon class="text-3xl shrink-0 text-[#0C669C]" name="material-symbols:alternate-email-rounded"/>
-                <p class="text-xl font-medium">example@mail.ru</p>
+                <p class="text-xl font-medium">optica.samareva@mail.ru</p>
             </NuxtLink>
             <div class="flex items-center gap-2">
                 <Icon class="text-3xl shrink-0 text-[#0C669C]" name="material-symbols:add-location-alt-outline"/>
