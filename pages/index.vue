@@ -14,7 +14,7 @@
             </SwiperSlide>
             <SwiperSlide class="w-full">
                 <NuxtLink class="w-full">
-                    <img class="object-cover" src="/img/hero/5.jpg" alt="">
+                    <img class="object-cover" src="/img/hero/hero_1.png" alt="">
                 </NuxtLink>
             </SwiperSlide>
         </Swiper>

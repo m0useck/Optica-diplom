@@ -6,7 +6,7 @@
         </NuxtLink>
         <div class="flex items-center gap-2 text-xl md:text-2xl xl:text-3xl font-Comfortaa font-normal">
             <span class="w-8 h-0.5 bg-black rounded-full"></span>
-            <p>Редактирование товара.</p>
+            <p>Редактирование товара</p>
             <span class="w-8 h-0.5 bg-black rounded-full"></span>
         </div>
         <FormKit @submit="updProduct" type="form" form-class="flex flex-col gap-6 full" :actions="false" messages-class="hidden">
