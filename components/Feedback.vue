@@ -4,7 +4,7 @@
         <div class="flex flex-col gap-6 relative z-[1]">
             <div class="flex items-center gap-2 text-xl text-white md:text-2xl xl:text-3xl px-4 md:px-6 xl:px-10 pt-10 font-Comfortaa font-normal">
                 <span class="w-8 h-0.5 bg-white rounded-full"></span>
-                <p>Связаться с нами</p>
+                <p>Обратная связь</p>
                 <span class="w-8 h-0.5 bg-white rounded-full"></span>
             </div>
             <div class="flex pb-10 px-4 md:px-6 xl:px-10 gap-6 z-[1] max-md:flex-col relative">

@@ -6,11 +6,11 @@
     </div>
     <div class="flex flex-col gap-">
         <p class="text-xl font-Comfortaa font-normal">Акция 1</p>
-        <img src="/img/stocks/1.jpg" alt="" class="rounded-xl lg:w-2/3">
+        <img src="/img/stocks/promotion_1.png" alt="" class="rounded-xl lg:w-2/3">
     </div>
     <div class="flex flex-col gap-">
         <p class="text-xl font-Comfortaa font-normal">Акция 2</p>
-        <img src="/img/stocks/2.jpg" alt="" class="rounded-xl lg:w-2/3">
+        <img src="/img/stocks/promotion_1.png" alt="" class="rounded-xl lg:w-2/3">
     </div>
 </template>
 

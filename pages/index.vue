@@ -4,12 +4,12 @@
         <Swiper :loop="true" :space-between="20" :modules="[SwiperPagination, SwiperAutoplay, SwiperNavigation]" :pagination="{ clickable: true }" :autoplay="{delay:3500}" :navigation="{prevEl:'.indexPrev', nextEl:'.indexNext'}" class="w-full md:h-[calc(100vh/2)] z-[1] rounded-md shadow-[0px_0px_13px_-9px_black] overflow-hidden">
             <SwiperSlide class="w-full">
                 <NuxtLink class="w-full">
-                    <img class="object-cover" src="/img/hero/3.jpg" alt="">
+                    <img class="object-cover" src="/img/hero/promotion_1.png" alt="">
                 </NuxtLink>
             </SwiperSlide>
             <SwiperSlide class="w-full">
                 <NuxtLink class="w-full">
-                    <img class="object-cover" src="/img/hero/4.jpg" alt="">
+                    <img class="object-cover" src="/img/hero/hero_1.png" alt="">
                 </NuxtLink>
             </SwiperSlide>
             <SwiperSlide class="w-full">
@@ -24,25 +24,7 @@
         <button class="absolute top-1/2 -translate-y-1/2 right-4 indexNext z-[1]">
             <Icon class="text-5xl text-[#218CAD]" name="material-symbols:chevron-right"/>
         </button>
-    </div>
-    <!-- <div class="font-semibold flex items-center justify-center py-4 px-10 w-full rounded-md gap-16 max-lg:flex-col max-lg:gap-8 bg-gradient-to-r from-[#0C669C] to-[#3BBAC2] text-white -mt-6">
-        <NuxtLink>
-            Оправы
-        </NuxtLink>
-        <NuxtLink>
-            Линзы
-        </NuxtLink>
-        <NuxtLink>
-            Контактные линзы
-        </NuxtLink>
-        <NuxtLink>
-            Готовые очки
-        </NuxtLink>
-        <NuxtLink>
-            Солнцезащитные очки
-        </NuxtLink>
-    </div> -->
-    
+    </div>  
     <div class="flex flex-col gap-6">
         <div class="flex items-center gap-2 text-xl md:text-2xl xl:text-3xl font-Comfortaa font-normal">
             <span class="w-8 h-0.5 bg-black rounded-full"></span>
