@@ -27,11 +27,11 @@
         </div>
         <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/house/kronshtadtskiy_bulvar_vl37bs1/Z04YcwdmSkIOQFtvfXR1eX5rZQ==/?ll=37.506379%2C55.848281&utm_medium=mapframe&utm_source=maps&z=17.06" style="color:#eee;font-size:12px;position:absolute;top:14px;">Кронштадтский бульвар, вл37Бс1 — Яндекс Карты</a><iframe class="w-full h-[500px]" src="https://yandex.ru/map-widget/v1/?ll=37.506379%2C55.848281&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc4MjEwNhJS0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCa0YDQvtC90YjRgtCw0LTRgtGB0LrQuNC5INCx0YPQu9GM0LLQsNGALCDQstC7MzfQkdGBMSIKDYkGFkIVpGRfQg%2C%2C&z=17.06" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         <div class="flex items-center flex-wrap md:justify-center gap-4">
-            <NuxtLink to="tel:8-926-471-57-29" class="flex items-center gap-2">
+            <NuxtLink to="tel:8-926-471-57-29" class="flex items-center gap-2 hover:text-[#0C669C] transition-all duration-300">
                 <Icon class="text-3xl shrink-0 text-[#0C669C]" name="material-symbols:call"/>
                 <p class="text-xl font-medium">8-926-471-57-29</p>
             </NuxtLink>
-            <NuxtLink to="mailto:123123123123@mail.ru" class="flex items-center gap-2">
+            <NuxtLink to="mailto:optica.samareva@mail.ru" class="flex items-center gap-2 hover:text-[#0C669C] transition-all duration-300">
                 <Icon class="text-3xl shrink-0 text-[#0C669C]" name="material-symbols:alternate-email-rounded"/>
                 <p class="text-xl font-medium">optica.samareva@mail.ru</p>
             </NuxtLink>

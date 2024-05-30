@@ -23,12 +23,12 @@
                     </NuxtLink>
                 </div>
                 <div class="flex gap-8 items-center max-md:gap-4 max-lg:flex-wrap max-lg:justify-center">
-                    <div class="relative max-lg:w-full">
-                        <input @input="onSearch" v-model="searchTerm" class="rounded-full border border-[#3BBAC2] pl-4 py-1 pr-10 w-full focus:outline-none focus:ring-0 focus:appearance-none" type="text">
-                        <button @click="onSearch" type="submit" class="absolute top-1/2 -translate-y-1/2 right-3">
+                    <form @submit.prevent="onSearch" class="relative max-lg:w-full">
+                        <input v-model="searchTerm" class="rounded-full border border-[#3BBAC2] pl-4 py-1 pr-10 w-full focus:outline-none focus:ring-0 focus:appearance-none" type="text">
+                        <button type="submit" class="absolute top-1/2 -translate-y-1/2 right-3">
                             <Icon class="text-2xl text-[#3BBAC2]" name="gravity-ui:magnifier"/>
                         </button>
-                    </div>
+                    </form>
                     <NuxtLink to="/cart" v-if="authenticated && role == 'user'">
                         <Icon class="text-2xl text-[#3BBAC2]" name="material-symbols:shopping-cart-outline"/>
                     </NuxtLink>

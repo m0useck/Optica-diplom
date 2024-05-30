@@ -1,7 +1,7 @@
 <template>
-    <div class="flex max-lg:flex-col border-2 border-[#0C669C] rounded-md gap-8 px-12 py-10 bg-white">
+    <div class="flex max-lg:flex-col max-lg:items-center border-2 border-[#0C669C] rounded-md gap-8 p-4 md:p-6 lg:px-12 lg:py-10 md:w-4/5 lg:w-full mx-auto bg-white">
         <img class="w-1/2 object-cover aspect-video rounded-xl" :src="props.products.image" alt="">
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 max-lg:items-center">
             <p class="text-xl">{{ props.products.title }}</p>
             <div class="flex items-center gap-4">
                 <button @click="minusCard" class="border border-[#D7D7D7] w-10 h-10 rounded-lg text-2xl">-</button>

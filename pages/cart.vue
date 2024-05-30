@@ -1,9 +1,9 @@
 <template>
     <div class="flex max-lg:flex-col gap-8 md:gap-10 xl:gap-12" v-if="carts.length>0">
-        <div class="flex flex-col gap-10 w-[70%]">
+        <div class="flex flex-col gap-10 w-full lg:w-[70%]">
             <CartCard v-for="cart in carts" v-bind="cart"></CartCard>
         </div>
-        <div class="flex flex-col gap-6 w-[30%] border-2 border-[#0C669C] rounded-md bg-white px-12 py-10 text-lg h-fit">
+        <div class="flex flex-col gap-6 w-full lg:w-[30%] border-2 border-[#0C669C] rounded-md bg-white p-4 md:p-6 lg:px-12 lg:py-10 text-lg h-fit">
             <p class="text-2xl">Детали заказа</p>
             <div class="flex flex-col gap-2">
                 <div class="flex items-center justify-between gap-2">

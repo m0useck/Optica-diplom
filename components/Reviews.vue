@@ -42,7 +42,7 @@
                 <span class="w-8 h-0.5 bg-white rounded-full"></span>
             </div>
             <FormKit @submit="addReview" type="form" :actions="false" messages-class="text-[#E71616]" form-class="flex flex-col items-center gap-6 w-full md:w-1/2 px-4 py-6 md:mx-auto">
-                <FormKit v-model="reviewsForm.desc" name="Отзыв" validation="required|length:5,200" type="textarea" placeholder="Напишите свой отзыв здесь" input-class="p-4 focus:outline-none h-28" inner-class="$remove:w-max-md w-full" outer-class="w-full rounded-md overflow-hidden"/>
+                <FormKit v-model="reviewsForm.desc" name="Отзыв" validation="required|length:5,200" type="textarea" placeholder="Напишите свой отзыв здесь" input-class="p-4 resize-none focus:outline-none h-28" inner-class="$remove:w-max-md w-full" outer-class="w-full rounded-md overflow-hidden"/>
                 <FormKit type="submit" input-class="bg-gradient-to-br from-[#0C669C] to-[#3BBAC2] rounded-md font-semibold text-white text-center w-full py-2 hover:opacity-80 transition-all duration-300 $remove:focus-visible:outline-blue-600 $remove:focus-visible:outline-offset-2 $remove:bg-blue-600 $remove:focus-visible:outline-2 $remove:inline-flex $remove:text-sm">Отправить</FormKit>
             </FormKit>
         </div>
