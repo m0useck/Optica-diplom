@@ -11,10 +11,10 @@
                     <div class="flex justify-center items-center gap-6">
                         <NuxtLink to="https://github.com/m0useck" target="_blank" class="transition-all duration-300 hover:scale-125"><Icon class="text-3xl" name="skill-icons:github-dark"/></NuxtLink>
                         <NuxtLink to="https://t.me/summerva" target="_blank" class="transition-all duration-300 hover:scale-125"><Icon class="text-3xl" name="logos:telegram"/></NuxtLink>
-                        <NuxtLink to="/" target="_blank" class="transition-all duration-300 hover:scale-125"><Icon class="text-3xl" name="devicon:figma"/></NuxtLink>
+                        <NuxtLink to="https://clck.ru/3AxYNr" target="_blank" class="transition-all duration-300 hover:scale-125"><Icon class="text-3xl" name="devicon:figma"/></NuxtLink>
                     </div>
                     <div class="flex flex-col gap-4 items-center">
-                        <div class="flex items-center justify-between  gap-4 max-md:flex-col">
+                        <div class="flex items-center justify-between gap-4 max-md:flex-col">
                             <NuxtLink to="/about" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300">О нас</NuxtLink> 
                             <span class="bg-white rounded-full w-1 h-1 shrink-0"></span>
                             <NuxtLink to="/catalog" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300">Каталог</NuxtLink> 
@@ -22,7 +22,7 @@
                             <NuxtLink to="/delivery" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300">Доставка</NuxtLink>
                         </div>
                         <span class="bg-white rounded-full w-1 h-1 shrink-0 mx-auto md:hidden"></span>
-                        <div class="flex items-center justify-between  gap-4 max-md:flex-col">
+                        <div class="flex items-center justify-between gap-4 max-md:flex-col">
                             <NuxtLink to="tel:8-926-471-57-29" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300 shrink-0">8-926-471-57-29</NuxtLink>
                             <span class="bg-white rounded-full w-1 h-1 shrink-0"></span>
                             <NuxtLink to="mailto:123123123123@mail.ru" class="flex flex-col w-fit after:w-0 after:h-px after:bg-white hover:after:w-full after:transition-all after:duration-300">optica.samareva@mail.ru</NuxtLink>
