@@ -10,7 +10,7 @@
                 <FormKit v-model="productForm.title" validation="required" outer-class="$remove:mb-4 w-full" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="px-4 py-2 border border-[#3BBAC2] rounded-xl focus:outline-none w-full" name="Наименование" placeholder="Наименование товара" type="text"/>                    
                 <FormKit v-model="productForm.price" validation="required|number" outer-class="$remove:mb-4 w-full" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="px-4 py-2 border border-[#3BBAC2] rounded-xl focus:outline-none w-full" name="Цена" placeholder="Цена" type="text"/>                    
                 <FormKit v-model="productForm.type" validation="required" outer-class="$remove:mb-4 w-full" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="px-4 py-2 border border-[#3BBAC2] rounded-xl focus:outline-none w-full" name="Тип" placeholder="Тип товара" type="select" :options="['Готовые очки','Оправы','Контактные линзы','Солнцезащитные очки']"/>                    
-                <FormKit v-model="productForm.age" outer-class="$remove:mb-4 w-full" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="px-4 py-2 border border-[#3BBAC2] rounded-xl focus:outline-none w-full" name="Категория" placeholder="Категория" type="select" :options="['Для детей','Для мужчин','Для женщин']"/>                    
+                <FormKit v-model="productForm.age" outer-class="$remove:mb-4 w-full" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="px-4 py-2 border border-[#3BBAC2] rounded-xl focus:outline-none w-full" name="Возрастная категория" placeholder="Возрастная категория" type="select" :options="['Для детей','Для мужчин','Для женщин']"/>                    
                 <FormKit v-model="productForm.brand" validation="required" outer-class="$remove:mb-4 w-full" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="px-4 py-2 border border-[#3BBAC2] rounded-xl focus:outline-none w-full" name="Бренд" placeholder="Бренд" type="text"/>                    
                 <FormKit v-model="productForm.color" validation="required" outer-class="$remove:mb-4 w-full" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="px-4 py-2 border border-[#3BBAC2] rounded-xl focus:outline-none w-full" name="Цвет" placeholder="Цвет товара" type="text"/>                    
                 <div class="flex flex-col gap-6 w-full">
@@ -64,7 +64,7 @@
             <span>Заказы</span>
             <span class="w-8 h-0.5 bg-black rounded-full"></span>
         </button>
-        <div class="flex flex-col gap-8 text-lg rounded-xl relative lg:w-1/2 transition-all duration-500 overflow-hidden" :class="isOrdersShow ? 'h-full border border-[#3BBAC2] p-4 max-lg:pt-10' : 'h-0'" v-for="order in ordersArray">
+        <div class="flex flex-col gap-8 text-lg rounded-xl relative lg:w-1/2 transition-all duration-500 overflow-hidden" :class="isOrdersShow ? 'h-fit border border-[#3BBAC2] p-4 max-lg:pt-10' : 'h-0'" v-for="order in ordersArray">
             <div class="flex flex-col gap-4">
                 <p><span class="font-Comfortaa">Заказчик:</span> <span class="font-bold">{{ order[0].users.surname }} {{ order[0].users.name }}</span></p>
                 <p><span class="font-Comfortaa">ID заказчика:</span> <span class="font-bold">{{ order[0].users.id }}</span></p>
@@ -74,7 +74,7 @@
                 <p><span class="font-Comfortaa">Итоговая цена:</span> <span class="font-bold">{{ order[0].sum.toLocaleString() }} ₽</span></p>
             </div>
             <div class="flex flex-col gap-4 rounded-xl shadow-[0px_0px_13px_-7px_black] p-4" v-for="o in order">
-                <p><span class="font-Comfortaa">Наименование товара/услуги:</span> <span class="font-bold">{{ o.products.title }}</span></p>
+                <p><span class="font-Comfortaa">Наименование товара:</span> <span class="font-bold">{{ o.products.title }}</span></p>
                 <img :src="o.products.image" alt="" class="rounded-xl w-[160px]">
                 <p><span class="font-Comfortaa">Количество товара:</span> <span class="font-bold">{{ o.count }}</span></p>
                 <p><span class="font-Comfortaa">Цена за единицу:</span> <span class="font-bold">{{ o.products.price.toLocaleString() }} ₽</span></p>
@@ -91,7 +91,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Админ-панель',
         lang: 'ru'
     })
@@ -112,7 +112,7 @@
 
 
     /* список заказов и проверка номеров */ 
-    const orderNumbers = []
+    const orderNumbers = [] /* номер заказа */ 
     const { data: carts } = await supabase
     .from('cart')
     .select(`*, products (*), users (*)`)    

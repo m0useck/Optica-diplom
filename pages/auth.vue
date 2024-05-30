@@ -22,7 +22,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Вход',
         lang: 'ru'
     })

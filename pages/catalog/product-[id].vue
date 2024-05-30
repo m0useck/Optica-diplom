@@ -71,7 +71,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Товар',
         lang: 'ru'
     })

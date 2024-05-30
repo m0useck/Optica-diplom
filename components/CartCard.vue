@@ -80,10 +80,10 @@
             messageTitle.value = 'Удалено!', messageType.value = true 
             setTimeout(() => {
                 messageTitle.value = null                
-            }, 3000)             
+            }, 1000)             
             setTimeout(() => {
                 router.go()               
-            }, 1500)             
+            }, 1000)
         }
     }
 </script>

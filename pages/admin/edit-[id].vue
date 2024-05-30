@@ -39,7 +39,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Админ-панель',
         lang: 'ru'
     })

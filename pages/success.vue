@@ -10,7 +10,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Успешное оформление',
         lang: 'ru'
     })

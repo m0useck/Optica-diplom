@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-2xl font-Comfortaa font-normal">Категория</p>
+                <p class="text-2xl font-Comfortaa font-normal">Возрастная категория</p>
                 <select class="rounded-md border border-[#3BBAC2] px-4 py-2" name="age" v-model="filters.age">
                     <option :value="age" v-for="age in selectAge">{{ age }}</option>
                 </select>
@@ -47,7 +47,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Каталог',
         lang: 'ru'
     })
@@ -70,10 +70,11 @@
     
 
     /* управление select'ами и input'ами */
-    const selectAge = ['Все', ...new Set(productsData.map(item => item.age))]
-    const selectType = ['Все', ...new Set(productsData.map(item => item.type))]
-    const inputBrand = [...new Set(productsData.map(item => item.brand))]
-    const inputColor = [...new Set(productsData.map(item => item.color))]
+    const selectAge = ['Все', ...new Set(productsData.map(item => item.age).filter(age => age))]
+    const selectType = ['Все', ...new Set(productsData.map(item => item.type).filter(type => type))]
+    const inputBrand = [...new Set(productsData.map(item => item.brand).filter(brand => brand))]
+    const inputColor = [...new Set(productsData.map(item => item.color).filter(color => color))]
+
        
 
     /* создание фильтров */    

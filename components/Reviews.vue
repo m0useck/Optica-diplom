@@ -26,10 +26,10 @@
                 <p class="opacity-70">{{ review.desc }}</p>
             </SwiperSlide>
         </Swiper>
-        <button class="absolute top-1/2 -translate-y-1/2 -left-10 reviewsPrev">
+        <button class="absolute top-1/2 -translate-y-1/2 -left-10 reviewsPrev max-lg:hidden">
             <Icon class="text-4xl text-[#218CAD]" name="material-symbols:chevron-left"/>
         </button>
-        <button class="absolute top-1/2 -translate-y-1/2 -right-10 reviewsNext">
+        <button class="absolute top-1/2 -translate-y-1/2 -right-10 reviewsNext max-lg:hidden">
             <Icon class="text-4xl text-[#218CAD]" name="material-symbols:chevron-right"/>
         </button>
     </div>

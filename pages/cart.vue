@@ -7,7 +7,7 @@
             <p class="text-2xl">Детали заказа</p>
             <div class="flex flex-col gap-2">
                 <div class="flex items-center justify-between gap-2">
-                    <label class="flex items-center gap-2 cursor-pointer"><input name="delivery" value="Доставка" type="radio" v-model="detailsForm.delivery" checked>Доставка</label>
+                    <label class="flex items-center gap-2 cursor-pointer"><input name="delivery" value="Доставка" type="radio" v-model="detailsForm.delivery">Доставка</label>
                     <p class="text-[#3BBAC2]">{{ deliveryPrice }} ₽</p>
                 </div>
                 <div class="flex items-center justify-between gap-2">
@@ -37,7 +37,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Корзина',
         lang: 'ru'
     })

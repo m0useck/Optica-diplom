@@ -50,7 +50,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'О нас',
         lang: 'ru'
     })

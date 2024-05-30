@@ -28,7 +28,7 @@
 
 <script setup>
     /* название страницы */
-    useServerSeoMeta({
+    useSeoMeta({
         title: 'Регистрация',
         lang: 'ru'
     })

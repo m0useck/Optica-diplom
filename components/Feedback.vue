@@ -7,8 +7,8 @@
                 <p>Обратная связь</p>
                 <span class="w-8 h-0.5 bg-white rounded-full"></span>
             </div>
-            <div class="flex pb-10 px-4 md:px-6 xl:px-10 gap-6 z-[1] max-md:flex-col relative">
-                <div class="flex flex-col md:w-[55%] rounded-lg p-0.5 bg-gradient-to-bl from-gray-200 to-[#3BBAC2]">
+            <div class="flex pb-10 md:px-6 xl:px-10 gap-6 z-[1] max-lg:flex-col relative">
+                <div class="flex flex-col lg:w-[55%] rounded-lg p-0.5 bg-gradient-to-bl from-gray-200 to-[#3BBAC2]">
                     <div class="bg-white p-4 rounded-md grow">
                         <Swiper :loop="true" :space-between="20" :modules="[SwiperAutoplay, SwiperPagination]" :pagination="{ clickable: true }" :autoplay="{delay:5000}" class="w-full h-full">
                             <SwiperSlide class="!flex flex-col gap-8 w-full mb-10">
@@ -26,14 +26,13 @@
                         </Swiper>
                     </div>
                 </div>
-                <div class="flex flex-col md:w-[45%] rounded-lg p-0.5 bg-gradient-to-br from-gray-200 to-[#3BBAC2]">
-                    <FormKit type="form" @submit="feedback" messages-class="text-[#E71616]" form-class="flex flex-col items-center gap-8 bg-white w-full h-full rounded-md px-4 py-6" :actions="false">
-                        <p class="text-center text-xl font-Comfortaa">Консультация</p>
+                <div class="flex flex-col lg:w-[45%] rounded-lg p-0.5 bg-gradient-to-br from-gray-200 to-[#3BBAC2]">
+                    <FormKit type="form" @submit="feedback" messages-class="text-[#E71616]" form-class="flex flex-col items-center gap-8 bg-white grow rounded-md px-4 py-6 justify-center" :actions="false">
                         <div class="flex flex-col gap-4 w-full items-center">
                             <FormKit v-model="form.name" validation="required|length:2" outer-class="$remove:mb-4 md:w-4/5" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="$remove:text-gray-700 $remove:border-none w-full border border-[#0C669C] px-4 py-1 w-full focus:outline-none focus:ring-0 focus:appearance-none rounded-md" name="Имя" placeholder="Имя" type="text"/>
                             <FormKit v-model="form.number" validation="required|length:11" outer-class="$remove:mb-4 md:w-4/5" inner-class="$remove:mb-1 $remove:max-w-md $remove:ring-1 $remove:ring-gray-400 w-full $remove:focus-within:ring-2" message-class="text-[#E71616]" input-class="$remove:text-gray-700 $remove:border-none w-full border border-[#0C669C] px-4 py-1 w-full focus:outline-none focus:ring-0 focus:appearance-none rounded-md" name="Телефон" placeholder="Телефон" type="mask" mask="+7 (###) ### ## ##"/>
                         </div>
-                        <FormKit type="submit" input-class="font-semibold bg-gradient-to-br from-[#0C669C] to-[#3BBAC2] rounded-md text-white text-center w-full py-2 hover:opacity-80 transition-all duration-300 $remove:focus-visible:outline-blue-600 $remove:focus-visible:outline-offset-2 $remove:bg-blue-600 $remove:focus-visible:outline-2 $remove:inline-flex $remove:text-sm">Звонок</FormKit>
+                        <FormKit type="submit" input-class="font-semibold bg-gradient-to-br from-[#0C669C] to-[#3BBAC2] rounded-md text-white text-center w-full py-2 hover:opacity-80 transition-all duration-300 $remove:focus-visible:outline-blue-600 $remove:focus-visible:outline-offset-2 $remove:bg-blue-600 $remove:focus-visible:outline-2 $remove:inline-flex $remove:text-sm">Оставить заявку</FormKit>
                     </FormKit>
                 </div>
             </div>
