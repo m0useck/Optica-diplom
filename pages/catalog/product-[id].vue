@@ -35,7 +35,7 @@
                 <div class="h-px rounded-full mx-auto w-[90%] bg-[#0C669C]/80"></div>
                 <p class="text-3xl text-[#3BBAC2]">{{ data[0].price.toLocaleString() }}₽</p>
                 <div class="h-px rounded-full mx-auto w-[90%] bg-[#0C669C]/80"></div>
-                <button @click="addCart" v-if="authenticated && role == 'user'" class="bg-[#0C669C] rounded-full text-white px-4 py-2 w-1/2 mx-auto transition-all hover:animate-pulse">Купить</button>
+                <button @click="addCart" v-if="authenticated && role == 'user'" class="bg-[#0C669C] rounded-full text-white px-4 py-2 w-1/2 mx-auto transition-all hover:animate-pulse">В корзину</button>
                 <p class="text-lg">Товар: <span class="text-emerald-700">в наличии</span></p>
             </div>
         </div>
