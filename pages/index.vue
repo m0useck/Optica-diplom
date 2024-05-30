@@ -92,6 +92,6 @@
     const { data:products, error } = await supabase
     .from('products')
     .select('*')
-    .order('id', { ascending: true })   
+    .order('id', { ascending: false })   
 </script>
 
